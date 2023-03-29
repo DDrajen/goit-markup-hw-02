@@ -4,49 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="bd">
     <!-- шапка сайту така ж сама як і на MainPage  -->
     <header class="header">
-      <nav>
-        <a class="logo" href="./index.html">WEB<span>STUDIO</span></a>
-        <ul class="menu-nav">
+      <nav class="nav">
+        <a class="link" href="./index.html"
+          ><span class="logo">WEB</span>STUDIO</a
+        >
+        <ul class="nav-menu list">
           <!-- необхідно ще додати локальні посилання на Contacts -->
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a class="link" href="./index.html">Studio</a></li>
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address class="contacts">
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <address>
+        <ul class="contacts list">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
         </ul>
       </address>
     </header>
     <main>
       <!-- Стаття де є види робіт WebStudio  -->
-      <article>
+      <article class="portfolio">
         <!-- h1 вказаний для кращої індексації, яке потрібно буде заховати -->
-        <h1>Portfolio of WebStudio</h1>
-        <ul>
-          <li><button type="button">All</button></li>
-          <li><button type="button">Web Site</button></li>
-          <li><button type="button">App</button></li>
-          <li><button type="button">Design</button></li>
-          <li><button type="button">Marketing</button></li>
+        <h1 class="portfolio-title" hidden>Portfolio of WebStudio</h1>
+        <ul class="portfolio-btns list">
+          <li><button class="btn current" type="button">All</button></li>
+          <li>
+            <button class="btn portfolio" type="button">Web Site</button>
+          </li>
+          <li><button class="btn portfolio" type="button">App</button></li>
+          <li>
+            <button class="btn portfolio" type="button">Design</button>
+          </li>
+          <li>
+            <button class="btn portfolio" type="button">Marketing</button>
+          </li>
         </ul>
-        <ul>
+        <ul class="apps list">
           <li>
             <img
               src="./images/portfolio/bankingappinterfaceconcept.jpg"
               alt="Banking App Interface Concept"
               width="360"
             />
-            <h3>Banking App Interface Concept</h3>
-            <p>App</p>
+            <h3 class="title">Banking App Interface Concept</h3>
+            <p class="text">App</p>
           </li>
           <li>
             <img
@@ -54,8 +74,8 @@
               alt="Cashless Payment"
               width="360"
             />
-            <h3>Cashless Payment</h3>
-            <p>Marketing</p>
+            <h3 class="title">Cashless Payment</h3>
+            <p class="text">Marketing</p>
           </li>
           <li>
             <img
@@ -63,8 +83,8 @@
               alt="Meditation App"
               width="360"
             />
-            <h3>Meditation App</h3>
-            <p>App</p>
+            <h3 class="title">Meditation App</h3>
+            <p class="text">App</p>
           </li>
           <li>
             <img
@@ -72,8 +92,8 @@
               alt="Taxi Service"
               width="360"
             />
-            <h3>Taxi Service</h3>
-            <p>Marketing</p>
+            <h3 class="title">Taxi Service</h3>
+            <p class="text">Marketing</p>
           </li>
           <li>
             <img
@@ -81,8 +101,8 @@
               alt="Screen Illustrations"
               width="360"
             />
-            <h3>Screen Illustrations</h3>
-            <p>Design</p>
+            <h3 class="title">Screen Illustrations</h3>
+            <p class="text">Design</p>
           </li>
           <li>
             <img
@@ -90,8 +110,8 @@
               alt="Online Courses"
               width="360"
             />
-            <h3>Online Courses</h3>
-            <p>Marketing</p>
+            <h3 class="title">Online Courses</h3>
+            <p class="text">Marketing</p>
           </li>
           <li>
             <img
@@ -99,8 +119,8 @@
               alt="Instagram Stories Concept"
               width="360"
             />
-            <h3>Instagram Stories Concept</h3>
-            <p>Design</p>
+            <h3 class="title">Instagram Stories Concept</h3>
+            <p class="text">Design</p>
           </li>
           <li>
             <img
@@ -108,8 +128,8 @@
               alt="Organic Food"
               width="360"
             />
-            <h3>Organic Food</h3>
-            <p>Web Site</p>
+            <h3 class="title">Organic Food</h3>
+            <p class="text">Web Site</p>
           </li>
           <li>
             <img
@@ -117,16 +137,16 @@
               alt="Fresh Coffee"
               width="360"
             />
-            <h3>Fresh Coffee</h3>
-            <p>Web Site</p>
+            <h3 class="title">Fresh Coffee</h3>
+            <p class="text">Web Site</p>
           </li>
         </ul>
       </article>
     </main>
     <!-- підвал сайту такий самий як і на MainPage -->
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        >WEB<span class="studio-footer">STUDIO</span></a
+      <a class="link" href="./index.html"
+        ><span class="logo">WEB</span>STUDIO</a
       >
       <p>
         Increase the flow of customers and sales for your business with digital

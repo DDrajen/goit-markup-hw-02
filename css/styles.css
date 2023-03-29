@@ -12,57 +12,124 @@
   --white-background: #ffffff;
   --modal-background: #fcfcfc;
 }
+/* Base styles */
 body {
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--dark);
+  background-color: var(--white-background);
+}
+.list {
+  list-style: none;
 }
 /* Header */
-.header {
+.nav > .link {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.166;
+}
+.nav .link {
   color: var(--dark);
 }
 .logo {
   color: var(--primary-brand);
 }
 .bd .link:hover,
-.bd .link:focus {
+.bd .link:focus,
+.logo:hover,
+.logo:focus {
   color: var(--pressed-state);
+}
+.nav-menu {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contacts .link {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Section1 */
+.hero {
+  color: var(--white-background);
+  background-color: var(--dark);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.071;
+}
+.btn {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  background-color: var(--primary-brand);
+  color: var(--white-background);
 }
 .bd .btn:hover,
 .bd .btn:focus {
   background-color: var(--pressed-state);
-}
-.contacts .link {
-  color: var(--text);
-}
-/* Section1 */
-.hero-image {
-  color: var(--white-background);
-  background-color: var(--dark);
-}
-.btn {
-  background-color: var(--primary-brand);
-}
-.btn-text {
   color: var(--white-background);
 }
 /* Section2 */
-.features p {
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--text);
 }
 /* Section3 */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
 /* Section4 */
 .team {
   background-color: var(--light);
 }
-.team p {
-  color: var(--text);
-}
 /* Footer */
 .footer {
   background-color: var(--dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.footer > .link {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.166;
 }
 .footer,
 .footer .link {
   color: var(--light);
+}
+/* Second page Portfolio */
+.portfolio-btns {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.btn.portfolio {
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--primary-brand);
+}
+.btn.current {
+  cursor: pointer;
+  background-color: var(--pressed-state);
+  color: var(--white-background);
 }

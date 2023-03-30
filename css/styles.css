@@ -50,8 +50,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.header-address .link {
+.header-address {
   font-style: normal;
+}
+.header-address .link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -147,7 +149,7 @@ body {
 }
 .btn.portfolio {
   cursor: pointer;
-  background-color: var(--accent);
+  background-color: var(--light);
   color: var(--primary-brand);
 }
 .btn:hover,

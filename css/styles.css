@@ -14,43 +14,48 @@
 }
 /* Base styles */
 body {
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: var(--dark);
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
   background-color: var(--white-background);
 }
 .list {
   list-style: none;
 }
 /* Header */
-.nav > .link {
-  font-family: Raleway;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.166;
-}
-.nav .link {
+.link {
+  text-decoration: none;
   color: var(--dark);
 }
-.logo {
-  color: var(--primary-brand);
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.logo-studio {
+  color: var(--dark);
 }
 .bd .link:hover,
 .bd .link:focus,
-.logo:hover,
-.logo:focus {
+.logo-studio:hover,
+.logo-studio:focus {
   color: var(--pressed-state);
 }
-.nav-menu {
+.header-menu {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
-.contacts .link {
-  color: var(--text);
-  font-weight: 400;
+.header-address .link {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 /* Section1 */
 .hero {
@@ -61,13 +66,16 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.071;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .btn {
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
   background-color: var(--primary-brand);
   color: var(--white-background);
@@ -82,10 +90,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
 }
 .text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--text);
 }
 /* Section3 */
@@ -93,43 +104,54 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
 }
 /* Section4 */
 .team {
   background-color: var(--light);
 }
+.team-item {
+  background-color: #ffffff;
+}
 /* Footer */
 .footer {
   background-color: var(--dark);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--light);
 }
 .footer > .link {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.166;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.footer,
-.footer .link {
+.footer-logo {
+  color: var(--primary-brand);
+}
+.footer .logo-studio {
   color: var(--light);
 }
 /* Second page Portfolio */
 .portfolio-btns {
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .btn.portfolio {
   cursor: pointer;
   background-color: var(--accent);
   color: var(--primary-brand);
 }
-.btn.current {
-  cursor: pointer;
+.btn:hover,
+.btn:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
 }
